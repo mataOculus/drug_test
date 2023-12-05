@@ -15,6 +15,12 @@ public class humanbreak : MonoBehaviour
             {
                 rb.isKinematic = false; // 자식들의 Rigidbody의 isKinematic을 해제
             }
+
+            Rigidbody selfRigidbody = GetComponent<Rigidbody>();
+            if (selfRigidbody != null)
+            {
+                selfRigidbody.isKinematic = false; // 자기 자신의 Rigidbody의 isKinematic을 해제
+            }
         }
     }
 
