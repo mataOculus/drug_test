@@ -15,7 +15,7 @@ public class ballhit : MonoBehaviour
             Rigidbody rb = GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.AddForce(oppositeDirection.normalized * 30f, ForceMode.Impulse);
+                rb.AddForce(oppositeDirection.normalized * 5f, ForceMode.Impulse);
                 // 만약에 오브젝트가 회전하면서 날아가길 원한다면, 아래 코드를 추가합니다.
                 // rb.AddTorque(Vector3.up * 500f, ForceMode.Impulse);
             }
