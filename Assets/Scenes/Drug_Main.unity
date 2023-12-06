@@ -5712,7 +5712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube: {fileID: 1870214808}
   mainCamera: {fileID: 963194227}
-  panel: {fileID: 0}
+  panel: {fileID: 141361533}
   activationDistance: 10
 --- !u!1 &1926400829
 GameObject:
