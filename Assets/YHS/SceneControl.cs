@@ -30,4 +30,19 @@ public class SceneControl : MonoBehaviour
     {
         SceneManager.LoadScene("SceneTest");
     }
+
+    public void Cannabis_Scene()
+    {
+        SceneManager.LoadScene("SceneTest");
+    }
+
+    public void Philopon_Scene()
+    {
+        SceneManager.LoadScene("SceneTest");
+    }
+
+    public void Pentanil_Scene()
+    {
+        SceneManager.LoadScene("SceneTest");
+    }
 }
