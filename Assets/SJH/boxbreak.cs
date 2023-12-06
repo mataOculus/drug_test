@@ -50,7 +50,7 @@ public class boxbreak : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("weapon")) // 'weapon' 태그를 가진 오브젝트와 충돌 확인
+        if (collision.gameObject.CompareTag("weapon") && canCycleMesh) // 'weapon' 태그를 가진 오브젝트와 충돌 확인
         {
             StartCoroutine(DelayCycleMesh()); // 충돌 시 일정 시간 후 메쉬 변경하는 코루틴 실행
         }
