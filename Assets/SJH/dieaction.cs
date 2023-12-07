@@ -1,64 +1,56 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class dieaction : MonoBehaviour
 {
-    public GameObject objectToRotate;
-    public float rotationSpeed = 30f; // 회전 속도
+    public float[] rotationAmountsZ = { 20f, -50f, 80f, -140f }; // Z 축 회전량 배열
+    public float[] rotationAmountsX = { 10f, -30f, 70f, -100f }; // X 축 회전량 배열
+    public float rotationDuration = 1f; // 회전 지속 시간
 
     private bool isRotating = false; // 회전 중 여부 확인
-    private float rotationTarget = 0f; // 목표 회전 각도
-    private float rotationAmount = 0f; // 현재 회전 각도
+    private int currentIndex = 0; // 현재 회전할 각도의 인덱스
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O) && !isRotating)
+        if (Input.GetKeyDown(KeyCode.O) && !isRotating) // O 버튼이 눌리고 회전 중이 아닐 때
         {
-            isRotating = true;
-
-            // 회전할 각도 설정
-            if (rotationAmount == 0f)
-            {
-                rotationTarget = 30f; // z 축으로 30도 회전
-            }
-            else if (rotationAmount == 30f)
-            {
-                rotationTarget = -30f; // -z 축으로 60도 회전
-            }
-        }
-
-        // 회전 중일 때
-        if (isRotating)
-        {
-            RotateObject();
+            StartCoroutine(StartMultipleRotations()); // 연속된 회전 시작
         }
     }
 
-    void RotateObject()
+    IEnumerator StartMultipleRotations()
     {
-        if (objectToRotate != null)
+        isRotating = true;
+
+        for (int i = 0; i < 4; i++) // 4번의 회전 실행
         {
-            // 회전 방향 결정
-            float direction = (rotationTarget > 0f) ? 1f : -1f;
-
-            // 회전
-            float rotationStep = rotationSpeed * Time.deltaTime;
-            rotationAmount += rotationStep * direction;
-
-            // 목표 회전 각도에 도달하면 회전 멈춤
-            if ((direction == 1f && rotationAmount >= rotationTarget) || (direction == -1f && rotationAmount <= rotationTarget))
-            {
-                rotationAmount = rotationTarget;
-                isRotating = false; // 회전 종료
-            }
-
-            // 변경된 회전값을 적용
-            objectToRotate.transform.rotation = Quaternion.Euler(0f, 0f, rotationAmount);
+            yield return StartCoroutine(RotateObject()); // 오브젝트 회전 코루틴 실행
         }
-        else
+
+        isRotating = false;
+    }
+
+    IEnumerator RotateObject()
+    {
+        float targetRotationZ = rotationAmountsZ[currentIndex];
+        float targetRotationX = rotationAmountsX[currentIndex];
+        float startRotationZ = transform.rotation.eulerAngles.z;
+        float startRotationX = transform.rotation.eulerAngles.x;
+        float progress = 0f;
+
+        while (progress < 1f)
         {
-            Debug.LogWarning("회전할 오브젝트가 설정되지 않았습니다!");
+            progress += Time.deltaTime / rotationDuration;
+
+            float newRotationZ = Mathf.LerpAngle(startRotationZ, startRotationZ + targetRotationZ, progress);
+            float newRotationX = Mathf.LerpAngle(startRotationX, startRotationX + targetRotationX, progress);
+
+            transform.rotation = Quaternion.Euler(0f, 0f, newRotationZ);
+            transform.Rotate(newRotationX - transform.rotation.eulerAngles.x, 0f, 0f, Space.Self);
+
+            yield return null;
         }
+
+        currentIndex = (currentIndex + 1) % rotationAmountsZ.Length; // 다음 회전 각도 인덱스로 업데이트
     }
 }
