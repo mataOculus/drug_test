@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rito_Screen Vignette and Blink
-  m_Shader: {fileID: 4800000, guid: 9684b3ed64d7eae42877d8035b99d4c0, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8dfcd646dc2ca334aac1751601abbbee, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -33,9 +33,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blink: 0.083
-    - _BlinkBase: 24
-    - _Brightness: 1
-    - _SightRange: 1
+    - _Blink: 0.542
+    - _BlinkBase: 20
+    - _Brightness: 0.566
+    - _SightRange: 0.73
     m_Colors: []
   m_BuildTextureStacks: []
