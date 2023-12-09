@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.27415198, g: 0.2519492, b: 0.22859338, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4128,6 +4128,41 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83244c178d5df554d95bb802c7c7d77b, type: 2}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.7980044
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0010032443
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.34999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000176917863234, guid: e8b9880a656da594ca6814ff9177bc1c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b9880a656da594ca6814ff9177bc1c, type: 3}
@@ -6865,7 +6900,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.05, y: 0.05, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &996919515
 GameObject:
@@ -8429,32 +8464,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9351718
+      value: 0.41878912
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9351718
+      value: 0.41878912
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.9351718
+      value: 0.41878912
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1709633
+      value: 2.1747
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.904382
+      value: -3.6115
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.292366
+      value: -27.437
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
@@ -9823,8 +9858,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &1611663629
-SphereCollider:
+--- !u!65 &1611663632
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9834,8 +9869,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.6657504
-  m_Center: {x: -7.8157036e-10, y: -0.000000007450581, z: -0.049387425}
+  m_Size: {x: 0.1534359, y: 0.15343587, z: 1.3315009}
+  m_Center: {x: -0.00000763312, y: -0.000000007450581, z: -0.049395062}
 --- !u!1 &1625315759
 GameObject:
   m_ObjectHideFlags: 0
@@ -10296,8 +10331,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.035245817, y: 0.018502781, z: 0.028029038}
-  m_Center: {x: -0.0073557105, y: 0.0027948862, z: -0.0059419414}
+  m_Size: {x: 0.017559132, y: 0.018502781, z: 0.01751223}
+  m_Center: {x: -0.0040232916, y: 0.0027948862, z: -0.00568092}
 --- !u!54 &1637653260
 Rigidbody:
   m_ObjectHideFlags: 0
