@@ -33,7 +33,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blink: 0.542
+    - _Blink: 1
     - _BlinkBase: 20
     - _Brightness: 0.566
     - _SightRange: 0.73
