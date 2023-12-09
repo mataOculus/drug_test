@@ -9,14 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Drug_Main.unity
     guid: 102b17a213bb42742a7f083e31e7c2f3
   - enabled: 1
-    path: Assets/Scenes/Drug_Main_test.unity
+    path: Assets/Scenes/Drug_Cannabis.unity
     guid: 995c412a7ebbe2d408df115ac7971f92
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Drug_Cocaine.unity
+    guid: 9b2334ada7e940a4288e6b58b666acc4
   - enabled: 1
-    path: Assets/Scenes/SceneTest.unity
-    guid: 1e46ad4d5f886be4391932cac201e5c1
+    path: Assets/Scenes/Drug_LSD.unity
+    guid: f45c7554f790709439c42d5c59572548
+  - enabled: 1
+    path: Assets/Scenes/Drug_Crystal Meth.unity
+    guid: a04f49c18b6261448872aa80470457c3
+  - enabled: 1
+    path: Assets/Scenes/Drug_Fentanyl.unity
+    guid: 2737d82830dc2d34ea2e3b75092f343c
+  - enabled: 1
+    path: Assets/Scenes/Drug_Heroin.unity
+    guid: 3d95dbf990dee95419931b32e61210f0
+  - enabled: 1
+    path: Assets/Scenes/Drug_Main_2.unity
+    guid: 88cce8765b3387041b4eabb4c58c184d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
