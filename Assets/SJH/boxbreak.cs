@@ -8,6 +8,8 @@ public class boxbreak : MonoBehaviour
     private int currentMeshIndex = 0; // 현재 메쉬 인덱스
     private bool canCycleMesh = true; // 입력을 받을 수 있는 상태인지 여부
 
+    public AudioClip breakSound;
+
     void Start()
     {
         SetMesh(currentMeshIndex); // 초기 메쉬 설정
@@ -53,6 +55,15 @@ public class boxbreak : MonoBehaviour
         if (collision.gameObject.CompareTag("weapon") && canCycleMesh) // 'weapon' 태그를 가진 오브젝트와 충돌 확인
         {
             StartCoroutine(DelayCycleMesh()); // 충돌 시 일정 시간 후 메쉬 변경하는 코루틴 실행
+            PlayHitSound();
+        }
+    }
+
+    void PlayHitSound()
+    {
+        if (breakSound != null)
+        {
+            AudioSource.PlayClipAtPoint(breakSound, transform.position);
         }
     }
 }

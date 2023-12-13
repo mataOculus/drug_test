@@ -1888,6 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914f885ae05a5e149a8a4dccb077b0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSound: {fileID: 8300000, guid: bd3f9b73c11dbea468f8e568e24c8533, type: 3}
 --- !u!1 &1045848415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1943,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
   - {fileID: 4300000, guid: 82ce82ea805963841a76d745840a0338, type: 3}
   - {fileID: 4300000, guid: fee5ca4b9b6423648ba453f4a7d3fd0c, type: 3}
+  breakSound: {fileID: 8300000, guid: 30e6a5f181e09794bb7ec4be9ab8f648, type: 3}
 --- !u!65 &1111263937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2402,6 +2404,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
   - {fileID: 4300000, guid: 82ce82ea805963841a76d745840a0338, type: 3}
   - {fileID: 4300000, guid: fee5ca4b9b6423648ba453f4a7d3fd0c, type: 3}
+  breakSound: {fileID: 8300000, guid: 30e6a5f181e09794bb7ec4be9ab8f648, type: 3}
 --- !u!65 &1272622031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2555,6 +2558,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
   - {fileID: 4300000, guid: 82ce82ea805963841a76d745840a0338, type: 3}
   - {fileID: 4300000, guid: fee5ca4b9b6423648ba453f4a7d3fd0c, type: 3}
+  breakSound: {fileID: 8300000, guid: 30e6a5f181e09794bb7ec4be9ab8f648, type: 3}
 --- !u!65 &1330948511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2758,6 +2762,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
   - {fileID: 4300000, guid: 82ce82ea805963841a76d745840a0338, type: 3}
   - {fileID: 4300000, guid: fee5ca4b9b6423648ba453f4a7d3fd0c, type: 3}
+  breakSound: {fileID: 8300000, guid: 30e6a5f181e09794bb7ec4be9ab8f648, type: 3}
 --- !u!65 &1610439311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2911,6 +2916,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
   - {fileID: 4300000, guid: 82ce82ea805963841a76d745840a0338, type: 3}
   - {fileID: 4300000, guid: fee5ca4b9b6423648ba453f4a7d3fd0c, type: 3}
+  breakSound: {fileID: 8300000, guid: 30e6a5f181e09794bb7ec4be9ab8f648, type: 3}
 --- !u!65 &1614542407
 BoxCollider:
   m_ObjectHideFlags: 0

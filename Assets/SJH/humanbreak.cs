@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class humanbreak : MonoBehaviour
 {
+
+    public AudioClip hitSound; // Unity Inspector에서 설정할 사운드 파일
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>(); // AudioSource 동적으로 추가
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("weapon"))
         {
+            PlayHitSound();
 
             Rigidbody[] childRigidbodies = GetComponentsInChildren<Rigidbody>();
 
@@ -35,6 +45,13 @@ public class humanbreak : MonoBehaviour
                 }
             }
 
+        }
+    }
+    void PlayHitSound()
+    {
+        if (audioSource != null && hitSound != null)
+        {
+            audioSource.PlayOneShot(hitSound);
         }
     }
 
