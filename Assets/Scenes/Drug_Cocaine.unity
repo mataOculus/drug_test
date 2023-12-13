@@ -1597,6 +1597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a640f2ce7544105458cdd0ff11a431fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraEffect: {fileID: 963194231}
   mainbacktime: {fileID: 1782723829}
   postProcessVolume: {fileID: 515751243}
 --- !u!1 &533194477
@@ -6987,8 +6988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0e82552e9d20e468a51f04e7c05f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 30
-  CameraEffect: {fileID: 963194231}
+  time: 10
+  map: 1
 --- !u!1 &1797072989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8758423527188247893, guid: 5b158b94c373d4b4f9e98cdb92789343,

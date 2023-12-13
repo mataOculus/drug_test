@@ -6,6 +6,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class camereffet2 : MonoBehaviour
 {
+    public CameraEffect cameraEffect;
     public mainbacktime mainbacktime;
     public PostProcessVolume postProcessVolume;
     private DepthOfField depthOfField;
@@ -57,6 +58,7 @@ public class camereffet2 : MonoBehaviour
     {
         if (!isChanging && mainbacktime.time < 6)
         {
+            cameraEffect.enabled = true;
             Debug.Log(mainbacktime.time);
             StartCoroutine(ChangeFocalLengthOverTime());
         }
