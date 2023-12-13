@@ -28,6 +28,10 @@ public class mainbacktime : MonoBehaviour
         {
             SceneManager.LoadScene("Drug_Main");
         }
+        if (map == 5)
+        {
+
+        }
         else
             SceneManager.LoadScene("Drug_Main_2");
 

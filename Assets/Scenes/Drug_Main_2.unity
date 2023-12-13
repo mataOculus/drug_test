@@ -8864,12 +8864,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1747
+      value: 2.181
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6115
+      value: -2.646
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
@@ -8939,7 +8939,7 @@ PrefabInstance:
     - target: {fileID: -47279426038983707, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2849
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -47279426038983707, guid: 367eba8ffa159dd4799047af1fe4c5e8,
         type: 3}
@@ -9110,8 +9110,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.87988687, y: 0.28346458, z: 0.7917685}
-  m_Center: {x: 0.016013432, y: 2.4186766, z: 0.13663498}
+  m_Size: {x: 0.87988675, y: 0.3104119, z: 0.7917684}
+  m_Center: {x: 0, y: 0.29291072, z: 0}
 --- !u!54 &1387263754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11454,7 +11454,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.08021556, y: 0.016551943, z: 0.36034003}
-  m_Center: {x: 0, y: 0, z: -0.0000009536743}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1717736379
 GameObject:
   m_ObjectHideFlags: 0
